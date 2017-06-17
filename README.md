@@ -1,4 +1,3 @@
 #ULSAN
 
-The web application server. React/Redux.
-
+The web application server. React/Redux!
