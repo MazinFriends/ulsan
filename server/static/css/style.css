@@ -1,0 +1,593 @@
+html, body {
+  background-image: url(../images/maze-background.jpg);
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  padding: 0;
+}
+
+.Title {
+  font-size: 60px;
+} 
+
+.Link {
+  color: black;
+}
+
+.addFriend {
+  background-image: url(../images/add-friend.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 40px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.edit {
+  background-image: url(../images/edit.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin-top: 65%;
+  margin-left: 75%;
+}
+
+.OnlineIcon {
+  display: inherit;
+    padding: 3px;
+}
+
+.online {
+  background-image: url(../images/online.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+}
+
+.offline {
+  background-image: url(../images/offline.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+}
+
+.Home {
+  width: 90%;
+  height: 90%;
+  background-color: darkred;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  color: black;
+  box-shadow: 2px 2px 20px darkgrey;
+}
+
+.Login {
+  margin: auto;
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  background: darkred;
+  color: black;
+  box-shadow: 2px 2px 20px darkgrey;
+  text-align: center;
+}
+
+.LoginBox {
+  background-color: maroon;
+  width: 35%;
+  height: 70%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  top: 10%;
+  text-align: center;
+  border: solid;
+}
+
+.loginForm {
+  width: 100%;
+  height: 50%;
+}
+
+.switchLogin {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.loginInput {
+  width: 80%;
+}
+
+ .GameOver {
+  opacity: 0.9;
+  width: 600px;
+  height: 600px;
+  background-color: maroon;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 25%;
+  text-align: center;
+  margin: auto;
+ }
+
+.vanish {
+  display: none;
+}
+
+.homeButtons {
+  width: 500px;
+  height: 50px;
+  margin: 10px;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+.Chat {
+  width: 27%;
+  height: 97%;
+  right: 0;
+  position: absolute;
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: solid 5px maroon;
+  background-color: maroon;
+  color: black;
+}
+
+.TextChat {
+  margin: 20px;
+  height: 55%;
+}
+
+.ChatContainer {
+  height: 70%;
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
+  background-color: whitesmoke;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+
+.TableContainer {
+  height: 45%;
+  width: 90%;
+  top: 0;
+  left: 0;
+  margin: 5%;
+  overflow-y: scroll;
+  vertical-align: bottom;
+  background-color: whitesmoke;
+}
+
+.Profile {
+  border: solid;
+  background-color: maroon;
+  width: 64%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 2.5%;
+  float: left;
+}
+
+.profilePic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-position: center center;
+  background-size: cover;
+  float: right;
+  top: 40px;
+  right: 350px;
+  border: 2px solid black;
+  margin-right: 45px;
+}
+
+.profileHeader {
+  text-align: left;
+  margin: 10px;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 25%;
+  display: inline-block;
+}
+
+.headersRight {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  float: right;
+  text-align: right;
+}
+
+.headersLeft {
+  display: inline-block;
+  width: 80%;
+  float: left;
+}
+
+.profileContent {
+  margin-top: -50px;
+  height: 80%;
+}
+
+.friend {
+  display: inline-block;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.FriendView {
+  background: whitesmoke;
+  width: 80%;
+  max-height: 20%;
+  top: 0;
+  left: 0;
+  margin: auto;
+  overflow-y: scroll;
+}
+
+.UserStats {
+  background: whitesmoke;
+  width: 80%;
+  height: 45%;
+  top: 0;
+  left: 0;
+  margin: auto;
+  overflow-y: scroll;
+}
+
+.statsTable, .friends {
+  text-align: center;
+  width: 95%;
+  padding: 5px;
+}
+
+.statsHeaders {
+  font-size: 25px;
+}
+
+.ChatBox {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
+  width: 85%;
+  height: 100%;
+}
+
+.TextInput {
+  bottom: 0;
+  width: 85%;
+  position: absolute;
+  margin-top: 15px;
+}
+
+.chatBar {
+  width: 70%;
+  margin-right: 5px;   
+  margin-bottom: 20px;
+}
+
+.Options {
+  text-align: center;
+  border: dotted 2px black;
+  padding-bottom: 10px;
+  background-color: maroon;
+}
+
+.optionButtons {
+  width: 150px;
+  height: 25px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+table {
+  font-size: xx-large;
+  text-align: left;
+  margin: 10px;
+}
+
+.Lobby {
+  background-color: maroon;
+  width: 27%;
+  margin-right: 20px;
+  border: solid;
+  height: 90%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 2.5%;
+  margin-left: 0;
+  float: right;
+}
+
+.LobbyTable {
+  font-size: 15px;
+  width: 95%;
+  top: 0;
+  left: 0;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.joinButton {
+  height: 25px;
+  width: 70%;
+  overflow: hidden;
+}
+
+.LobbyHeaders {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.NewGame {
+  border-bottom: dotted;
+  padding-bottom: 15px;
+  margin: 10px;
+}
+
+.NewGameForm {
+  text-align: left;
+  width: 90%;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+
+select, .roomInput {
+  width: 68%;
+}
+
+.inviteInput {
+  width: 57%;
+}
+
+label {
+  padding-right: 5px;
+}
+
+
+.newGameButton {
+  width: 100%;
+  height: 25px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.Controls {
+  opacity: 0.9;
+  width: 40%;
+  height: 75%;
+  background-color: darkred;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 25%;
+  text-align: center;
+  margin: auto;
+  padding: 30px;
+  color: black;
+}
+
+.Move {
+  float: left;
+  position: relative;
+}
+
+.Look {
+  float: right;
+  position: relative;
+}
+
+#canvas {
+ width: 71%; 
+ height: 97%;
+ float: left;
+ display: inline-block;
+}
+
+#videos {
+  padding: 5px 5px 0px 5px;
+  margin: 5px 5px 0px 5px;
+  width: 100%;
+}
+
+#localVideo {
+  width: 45%;
+  float: center;
+  padding-right: 5px;
+ }
+
+#remoteVideo {
+  width: 45%;
+  float: center;
+  padding-left: 5px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.progress {
+    height: 20px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+.progress-striped .progress-bar,
+.progress-bar-striped {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+}
+.progress.active .progress-bar,
+.progress-bar.active {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+}
+.progress-bar-success {
+    background-color: #5cb85c;
+}
+.progress-striped .progress-bar-success {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.progress-bar-info {
+    background-color: #5bc0de;
+}
+.progress-striped .progress-bar-info {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.progress-bar-warning {
+    background-color: #f0ad4e;
+}
+.progress-striped .progress-bar-warning {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+.progress-bar-danger {
+    background-color: #d9534f;
+}
+.progress-striped .progress-bar-danger {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:      -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image:         linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+
+.preview {
+    position: absolute;
+    top: 100px;
+}
+.modalImage {
+    height: 50px;
+    width: 50px;
+}
+/*table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table {
+    border-collapse: collapse !important;
+}
+.table td,
+.table th {
+    background-color: #fff !important;
+}
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #ddd !important;
+}
+th {
+    text-align: left;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+}
+.table > tbody + tbody {
+    border-top: 2px solid #ddd;
+}
+.table .table {
+    background-color: #fff;
+}
+
