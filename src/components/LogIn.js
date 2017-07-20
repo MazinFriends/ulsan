@@ -6,7 +6,6 @@ import ForgotPassword from './ForgotPassword';
 import SignUp from './SignUp';
 
 const LogIn = () => (
-	<div className="background">
 	<div className="center-container">
 		<div className="panel">
 			<div className="panel-heading">
@@ -27,7 +26,6 @@ const LogIn = () => (
 				<div className="link"><Link to="/signup">Create an account</Link></div>		
 			</div>
 			<p>By logging in, I certify that I agree with the Terms of Service EULA and Privacy Policy.</p>
-		</div>
 		</div>
 	</div>
 )
