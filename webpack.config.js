@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'bundle.js',
+    publicPath: '/'
   },
   module: {
     loaders: [
@@ -24,4 +25,7 @@ module.exports = {
       }
     ],
   },
+  devServer: {
+    historyApiFallback: true
+  }
 };
