@@ -4,12 +4,7 @@
 
 body {
 	font-size: 14px;
-}
-h2 {
-	margin: 0;
-}
-.background {
-	display: flex;
+		display: flex;
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
@@ -17,13 +12,22 @@ h2 {
 	background-size: cover;
 	background-image: @maze-background-image;
 }
+h2 {
+	margin: 0;
+}
+.background {
+
+}
+.center-container {
+	flex: 1;
+}
 .panel {
 	padding: 30px;
 	padding-top: 20px;
 	width: 360px;
 	background-color: rgba(255,255,255, .8);
 	margin: auto;
-
+	display: block;
 	input {
 		display: block;
 		width: 100%;
@@ -49,4 +53,26 @@ h2 {
 .panel-body {
 	padding: 0;
 	padding-top: 20px;
+}
+.panel-footer {
+	display: block;
+	text-align: center;
+	border: none;
+	background-color: transparent;
+	.links {
+		display: inline-flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		div {
+			align-self: center;
+			padding: 10px;
+			hr {
+				margin: 0;
+				width: 2px;
+				height: 20px;
+				background-color: @light-blue;
+			}
+		}
+		
+	}
 }
