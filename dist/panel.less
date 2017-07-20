@@ -58,18 +58,26 @@ h2 {
 	border: none;
 	background-color: transparent;
 	.links {
-		display: inline-flex;
+		display: flex; 
+		align-items: center;  
 		justify-content: center;
-		flex-wrap: wrap;
 		div {
-			align-self: center;
 			padding: 10px;
+			display: inline-block;
 			hr {
 				margin: 0;
 				width: 2px;
 				height: 20px;
 				background-color: @light-blue;
 			}
+		}
+		div:first-child {
+			text-align: right;
+			width: 45%;
+		}
+		div:last-child {
+			text-align: left;
+			width: 45%;
 		}
 		
 	}
